@@ -10,6 +10,8 @@ unzip -oq ${tmpfile} -d ${workingdir}
 mkdir -p config
 cp ${workingdir}/lint-master/config/*.yml config/
 cp ${workingdir}/lint-master/rubocop.yml .rubocop.yml
+cp ${workingdir}/lint-master/scss-lint.yml .scss-lint.yml
+cp ${workingdir}/lint-master/hound.yml .hound.yml
 
 rm -rf ${workingdir}
 rm -f ${tmpfile}
