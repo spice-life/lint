@@ -59,6 +59,10 @@ Style/BlockDelimiters:
 Style/Documentation:
   Enabled: false
 
+# 代入の後改行したほうが横に長くなりづらく見やすい
+Style/MultilineAssignmentLayout:
+  Enabled: true
+
 #
 # Lint
 #
