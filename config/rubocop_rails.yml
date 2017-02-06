@@ -1,0 +1,14 @@
+Rails:
+  Enabled: true
+
+# saveの返り値チェック忘れを防ぎたい
+# 失敗することがほぼないならsave!をつかう
+Rails/SaveBang:
+  Enabled: true
+
+# なるべくRuby標準のメソッドを使う
+Rails/SafeNavigation:
+  ConvertTry: true
+
+Rails/HttpPositionalArguments:
+  Enabled: false # Rails5ならtrueにする
