@@ -68,6 +68,11 @@ Style/MultilineAssignmentLayout:
 Style/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 
+# メソッドチェインで複数行になったときにインデントが長く横にのびるため
+# 出来る限り短くなるようにする
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
 #
 # Lint
 #
