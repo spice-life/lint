@@ -63,6 +63,11 @@ Style/Documentation:
 Style/MultilineAssignmentLayout:
   Enabled: true
 
+# メソッドチェインで複数行になったときにインデントが長く横にのびるため
+# 出来る限り短くなるようにする
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
 #
 # Lint
 #
