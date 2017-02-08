@@ -54,6 +54,10 @@ Style/BlockDelimiters:
   # メソッドチェインしている場合は複数行でも{}を使いたいので
   # rubocop -a で変換されないよう除外
   AutoCorrect: false
+  # expect { }.to で複数行xメソッドチェインが多発するので
+  # specを対象から除外する
+  Exclude:
+    - "spec/**/*.rb"
 
 # 公開ライブラリでもない限り、ドキュメントを書くことはほぼないと考える
 Style/Documentation:
