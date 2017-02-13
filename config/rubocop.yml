@@ -140,3 +140,6 @@ Metrics/PerceivedComplexity:
 Performance/Casecmp:
   Enabled: false
 
+# 最終行にもカンマを付ける
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
