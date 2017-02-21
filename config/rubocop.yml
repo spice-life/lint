@@ -77,6 +77,14 @@ Style/AlignParameters:
 Style/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
+# - module 分割を強制すると以下の問題がある
+#   - インデントが深くなる
+#   - 自動生成で Hoge::Fuga のように生成されることがある
+# - module に分割したいケースがある
+# 上記のような理由から、 "module Hoge { module Fuga {" と "module Hoge::Fuga" の両方を許容するため disable に
+Style/ClassAndModuleChildren:
+  Enabled: false
+
 #
 # Lint
 #
@@ -139,4 +147,3 @@ Metrics/PerceivedComplexity:
 # パフォーマンスのメリットよりcasecmpを使った時のわかりづらさのデメリットのほうが大きい
 Performance/Casecmp:
   Enabled: false
-
