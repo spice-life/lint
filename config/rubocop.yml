@@ -88,7 +88,7 @@ Style/ClassAndModuleChildren:
 # num.positive? が num > 0 と比較したときに必ずしも同じニュアンスにならない。
 # positive?/negative?を使わない設定にしてもいいがzero?は使いたいケースがあるので
 # ルール自体をdisableにする
-Style/NumericPredicate
+Style/NumericPredicate:
   Enabled: false
 
 #
