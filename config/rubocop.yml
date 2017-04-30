@@ -91,6 +91,12 @@ Style/ClassAndModuleChildren:
 Style/NumericPredicate:
   Enabled: false
 
+
+# 0.48.1でデフォルトの挙動(`[]`がデフォルトにった)が変わったため、`()`に揃えるようにする
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%i': ()
+
 #
 # Lint
 #
