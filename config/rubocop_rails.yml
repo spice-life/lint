@@ -9,3 +9,8 @@ Rails/SaveBang:
 # なるべくRuby標準のメソッドを使う
 Rails/SafeNavigation:
   ConvertTry: true
+
+# マイグレーションのdownを使うことがないため
+# わざわざreversibleにする理由がない
+Rails/ReversibleMigration:
+  Enabled: false
