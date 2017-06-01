@@ -9,6 +9,3 @@ Rails/SaveBang:
 # なるべくRuby標準のメソッドを使う
 Rails/SafeNavigation:
   ConvertTry: true
-
-Rails/HttpPositionalArguments:
-  Enabled: false # Rails5ならtrueにする
