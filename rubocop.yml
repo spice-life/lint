@@ -1,3 +1,4 @@
 inherit_from:
   - 'config/rubocop.yml'
   - 'config/rubocop_rails.yml'
+  - 'config/rubocop_rails4.yml' # Rails5の場合削除
