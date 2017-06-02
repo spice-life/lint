@@ -63,20 +63,6 @@ Style/BlockDelimiters:
 Style/Documentation:
   Enabled: false
 
-# 代入の後改行したほうが横に長くなりづらく見やすい
-Style/MultilineAssignmentLayout:
-  Enabled: true
-
-# メソッドチェインで複数行になったときにインデントが長く横にのびるため
-# 出来る限り短くなるようにする
-Style/AlignParameters:
-  EnforcedStyle: with_fixed_indentation
-
-# メソッドチェインで複数行になったときにインデントが長く横にのびるため
-# 出来る限り短くなるようにする
-Style/MultilineMethodCallIndentation:
-  EnforcedStyle: indented
-
 # - module 分割を強制すると以下の問題がある
 #   - インデントが深くなる
 #   - 自動生成で Hoge::Fuga のように生成されることがある
@@ -90,6 +76,24 @@ Style/ClassAndModuleChildren:
 # ルール自体をdisableにする
 Style/NumericPredicate:
   Enabled: false
+
+#
+# Layout
+#
+
+# 代入の後改行したほうが横に長くなりづらく見やすい
+Layout/MultilineAssignmentLayout:
+  Enabled: true
+
+# メソッドチェインで複数行になったときにインデントが長く横にのびるため
+# 出来る限り短くなるようにする
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+# メソッドチェインで複数行になったときにインデントが長く横にのびるため
+# 出来る限り短くなるようにする
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
 
 #
 # Lint
