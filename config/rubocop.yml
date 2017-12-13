@@ -113,35 +113,32 @@ Metrics/AbcSize:
 Metrics/BlockNesting:
   Max: 3
 
+
+# クラスの肥大化は避けたいけど
+# 行数でチェックするのもちょっと違う
 Metrics/ClassLength:
-  CountComments: false
-  Max: 100
+  Enabled: false
 
+# クラスと同様
 Metrics/ModuleLength:
-  CountComments: false
-  Max: 100
+  Enabled: false
 
-Metrics/CyclomaticComplexity:
-  Max: 10
-
+# 長すぎて困るということがあまりない
 Metrics/LineLength:
-  Max: 120
-  AllowHeredoc: true
-  AllowURI: true
-  URISchemes:
-    - http
-    - https
+  Enabled: false
 
+# LineLength同様
+Metrics/BlockLength:
+  Enabled: false
+
+# 他のLength系同様オフにしてもよかったが
+# 他のLength系よりは行数を短くするメリットがでかいため残す
 Metrics/MethodLength:
   CountComments: false
   Max: 30
 
-Metrics/BlockLength:
-  # rspec, routesは巨大なブロック不可避なので除外
-  Exclude:
-    - "spec/**/*.rb"
-    - "config/routes.rb"
-
+Metrics/CyclomaticComplexity:
+  Max: 10
 
 Metrics/ParameterLists:
   Max: 5
