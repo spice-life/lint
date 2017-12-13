@@ -77,6 +77,12 @@ Style/ClassAndModuleChildren:
 Style/NumericPredicate:
   Enabled: false
 
+# どちらかというと()に寄せる方がよいが
+# rubocopのデフォルトに一時期あわせていた都合で
+# そこら中で警告がでるのでdisable
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
 #
 # Layout
 #
